@@ -3,7 +3,7 @@ import express from "express";
 import {ApolloServer} from "apollo-server-express";
 import http from 'http';
 
-const PORT = 4000;
+const PORT = process.env['PORT'] || 4000;
 const app = express();
 
 const server = new ApolloServer({

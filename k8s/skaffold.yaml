@@ -1,0 +1,9 @@
+apiVersion: skaffold/v1beta7
+kind: Config
+build:
+  artifacts:
+    - image: 696961721203.dkr.ecr.us-west-2.amazonaws.com/pbl/user-project-service
+      context: .
+deploy:
+  kustomize:
+    path: ./k8s/

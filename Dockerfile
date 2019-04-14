@@ -10,4 +10,4 @@ EXPOSE 4000
 RUN npm install
 
 # start app with yarn
-CMD ["npm", "start"]
+CMD ["npm", "run", "prod"]
